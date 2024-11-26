@@ -6,23 +6,7 @@
       alt=""
       class="w-full h-full object-fit" />
   </section>
-  <div class="p-4">
-    <h3 class="text-center font-bold text-2xl">Thương hiệu</h3>
-    <div class="w-full flex justify-center">
-      <div class="w-40">
-        <img src="./img/thuonghieu1.webp" alt="" />
-      </div>
-      <div class="w-40">
-        <img src="./img/thuonghieu2.webp" alt="" />
-      </div>
-      <div class="w-40">
-        <img src="./img/thuonghieu3.webp" alt="" />
-      </div>
-      <div class="w-40">
-        <img src="./img/thuonghieu4.webp" alt="" />
-      </div>
-    </div>
-  </div>
+
 
   <div class="p-4">
     <h3 class="text-center border-b text-2xl font-bold">Sản phẩm</h3>
@@ -107,6 +91,24 @@
           <h4 class="text-xl font-bold text-center">Sản phẩm 1</h4>
           <p class="text-center">Giá: 700.000d</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-center font-bold text-2xl">Thương hiệu</h3>
+    <div class="w-full flex justify-center">
+      <div class="w-40">
+        <img src="./img/thuonghieu1.webp" alt="" />
+      </div>
+      <div class="w-40">
+        <img src="./img/thuonghieu2.webp" alt="" />
+      </div>
+      <div class="w-40">
+        <img src="./img/thuonghieu3.webp" alt="" />
+      </div>
+      <div class="w-40">
+        <img src="./img/thuonghieu4.webp" alt="" />
       </div>
     </div>
   </div>
