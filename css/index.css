@@ -161,9 +161,6 @@ nav {
 .banner {
   padding-top: 10px;
 }
-.carousel-inner .carousel-item img {
-  height: calc(100vh - 80px);
-}
 
 /* title */
 .title {
@@ -604,17 +601,7 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.box-cart-left-item-text-header p {
-  font-weight: 500;
-  font-size: 18px;
-}
-.box-cart-left-item-text-content {
-  margin-top: 10px;
-  color: #757575;
-}
-.box-cart-left-item-text-content p {
-  margin-top: 5px;
-}
+
 .quaition {
   width: 100%;
   display: flex;

@@ -1,8 +1,8 @@
 <div class="box-color">
     <div class="title d-flex w-full justify-content-lg-between">
-        <span class="">Kho sản phẩm</span>
-        <a href="index.php?layout=admin&page=deleteProduct">
-            <button class="btn btn-outline-danger">Kho xóa</button>
+        <span class="">Kho xóa sản phẩm</span>
+        <a href="index.php?layout=admin">
+            <button class="btn btn-outline-primary">Danh sách</button>
         </a>
     </div>
     <div class="box-color-body row">
@@ -17,8 +17,7 @@
                         <th scope="col">Ảnh</th>
                         <th scope="col">Danh mục</th>
                         <th scope="col">Mô tả</th>
-                        <th scope="col" style="width: 80px">Sửa</th>
-                        <th scope="col" style="width: 80px">Xóa</th>
+                        <th scope="col" style="width: 80px">Khôi phục</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,14 +34,10 @@
                             <td><img src="./uploads/<?= $data['image'] ?>" alt="" class="size-20"></td>
                             <td><?= $data['cateName'] ?></td>
                             <td><?= $data['description'] ?></td>
-                            <td>
-                                <a href="index.php?layout=admin&page=updateProduct&id=<?= $data['id'] ?>">
-                                    <button class="btn btn-outline-success">Sửa</button>
-                                </a>
-                            </td>
+
                             <td>
                                 <form action="" method="post">
-                                    <button class="btn btn-outline-danger" name="btn-product-delete" value="<?= $data['id'] ?>" onclick="return confirm('Bạn có muốn xóa không ?')">Xóa</button>
+                                    <button class="btn btn-outline-success" name="btn-product-delete" value="<?= $data['id'] ?>" onclick="return confirm('Bạn có muốn khôi phục không ?')">Khôi phục</button>
                                 </form>
                             </td>
                         </tr>

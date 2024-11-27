@@ -23,11 +23,9 @@
 </head>
 
 <body>
-    <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
-                <img src="./images/logo.png" style="width:20px;" class="rounded me-2" alt="...">
-                <strong class="me-auto">Nike</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
             <div class="toast-body">
@@ -39,6 +37,21 @@
         const toastLiveExample = document.getElementById('liveToast')
         const toastBody = document.querySelector('.toast-body')
         const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+
+        const handlerToast = (isType, message) => {
+            if (isType === "success") {
+                toastLiveExample.classList.remove("text-bg-danger")
+                toastLiveExample.classList.add("text-bg-success")
+                toastBody.textContent = message
+            } else if (isType === "error") {
+                toastLiveExample.classList.add("text-bg-danger")
+                toastLiveExample.classList.remove("text-bg-success")
+                toastBody.textContent = message
+            }
+
+            toastBootstrap.show()
+
+        }
     </script>
 
     <header>
@@ -65,10 +78,8 @@
 
                 <div class="d-flex align-items-center gap-4">
                     <div class="mr-2">
-                        <a href="index.php?page=contact" class="cart">
+                        <a href="index.php?page=cart" class="cart">
                             <i class="fa-solid fa-basket-shopping"></i></a>
-
-
                     </div>
                     <?php
                     if (isset($sessionUserId['id'])) {
@@ -101,13 +112,13 @@
                                 <li>
                                     <a
                                         class="dropdown-item"
-                                        href="/duan1_Nike/index.php?act=purchase">Đơn hàng</a>
+                                        href="index.php?page=purchases">Đơn hàng</a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a
                                         class="dropdown-item"
                                         href="/duan1_Nike/index.php?act=userInfo">Thông tin cá nhân</a>
-                                </li>
+                                </li> -->
 
                                 <li>
                                     <a
